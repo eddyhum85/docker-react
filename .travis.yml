@@ -1,7 +1,9 @@
 sudo: required
+
 services:
   - docker
-before_intall:
+
+before_install:
   - docker build -t eddyhum85/docker-react -f Dockerfile.dev .
 
 script:
